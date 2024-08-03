@@ -2,7 +2,7 @@
 
 def print_board(board: list[list[str]]):
     for row in board:
-        print(" ".join(row).replace(".", "--").replace("X", "\033[1;31m██\033[0m").replace("O", "\033[1;33m██\033[0m"))
+        print(" ".join(row).replace(".", "--").replace("X", "\033[1;31mXX\033[0m").replace("O", "\033[1;33mOO\033[0m"))
 
 def in_bounds(x: int, y: int) -> bool:
     return x >= 0 and x <= 6 and y >= 0 and y <= 5
